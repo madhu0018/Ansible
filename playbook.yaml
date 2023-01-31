@@ -1,6 +1,6 @@
 ---
 - name: appache
-  host: localhost
+  hosts: localhost
   become: yes
   tasks: 
     - name: appache install
