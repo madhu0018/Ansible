@@ -9,7 +9,7 @@ pipeline {
         }
         stage('installing appache2'){
             steps {
-                sh 'ansible-playbook -i hosts playbook.yaml'
+                sh 'ansible-playbook playbook.yaml'
             }
         }
     }
