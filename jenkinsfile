@@ -3,8 +3,8 @@ pipeline {
     stages{
         stage ('git clone'){
             step {
-                git url: " " ,
-                branch : ""
+                git url: "https://github.com/madhu0018/Ansible.git" ,
+                branch : "master"
             }
         }
         stage('installing appache2'){
