@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+    stages{
+        stage ('git clone'){
+            step {
+                git url: " " ,
+                branch : ""
+            }
+        }
+        stage('installing appache2'){
+            step {
+                sh ' ansible-playbook playbook.yaml'
+            }
+        }
+    }
+}

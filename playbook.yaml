@@ -1,0 +1,10 @@
+---
+- name: appache
+  host: localhost
+  become: yes
+  tasks: 
+    - name: appache install
+      ansible.builtin.apt:
+        name: appache2
+        update_cache: yes
+        state: present
